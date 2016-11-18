@@ -1,9 +1,11 @@
-var Hammer, SHOW_LOG, bus,
+var Hammer, SHOW_LOG, _, bus,
   slice = [].slice;
 
 Hammer = require('hammerjs');
 
 bus = require('./bus');
+
+_ = require('lodash');
 
 SHOW_LOG = true;
 

@@ -1,5 +1,6 @@
 # bus = require './bus'
 core = require './core'
+_ = require 'lodash'
 
 module.exports =
   install: (Vue, options = {})->

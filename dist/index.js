@@ -1,7 +1,9 @@
-var core,
+var _, core,
   slice = [].slice;
 
 core = require('./core');
+
+_ = require('lodash');
 
 module.exports = {
   install: function(Vue, options) {

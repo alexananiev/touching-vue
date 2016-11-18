@@ -1,4 +1,7 @@
-var slice = [].slice;
+var _,
+  slice = [].slice;
+
+_ = require('lodash');
 
 module.exports = function(core) {
   return {

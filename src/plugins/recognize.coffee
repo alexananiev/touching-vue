@@ -1,3 +1,4 @@
+_ = require 'lodash'
 Hammer = require 'hammerjs'
 
 directions =

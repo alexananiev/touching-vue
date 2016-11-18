@@ -1,5 +1,6 @@
 Hammer = require 'hammerjs'
 bus = require './bus'
+_ = require 'lodash'
 
 SHOW_LOG = true
 
