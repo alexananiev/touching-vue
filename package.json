@@ -1,0 +1,26 @@
+{
+  "name": "touching-vue",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "touch",
+    "hammerjs",
+    "mobile"
+  ],
+  "author": "Alex Ananiev <alex.ananiev.r@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.3"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "vue": "^2.0.7"
+  }
+}
