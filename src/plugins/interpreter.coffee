@@ -23,5 +23,10 @@ module.exports = (core)->
 
   off: (el, {value, oldValue, arg, modifiers}, vnode)->
     type = arg
+    id = "#{type}/#{value}"
+    core.offInterpreter id
+
+  offOld: (el, {value, oldValue, arg, modifiers}, vnode)->
+    type = arg
     id = "#{type}/#{oldValue}"
     core.offInterpreter id

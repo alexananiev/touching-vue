@@ -44,6 +44,13 @@ module.exports = function(core) {
       value = binding.value, oldValue = binding.oldValue, arg = binding.arg, modifiers = binding.modifiers;
       code = _.keys(modifiers)[0] || 'any';
       type = arg;
+      return core.offInput(code + "/" + type + "/" + value);
+    },
+    offOld: function(el, binding, vnode) {
+      var arg, code, modifiers, oldValue, type, value;
+      value = binding.value, oldValue = binding.oldValue, arg = binding.arg, modifiers = binding.modifiers;
+      code = _.keys(modifiers)[0] || 'any';
+      type = arg;
       return core.offInput(code + "/" + type + "/" + oldValue);
     }
   };

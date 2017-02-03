@@ -38,6 +38,13 @@ module.exports = function(core) {
       var arg, id, modifiers, oldValue, type, value;
       value = arg1.value, oldValue = arg1.oldValue, arg = arg1.arg, modifiers = arg1.modifiers;
       type = arg;
+      id = type + "/" + value;
+      return core.offInterpreter(id);
+    },
+    offOld: function(el, arg1, vnode) {
+      var arg, id, modifiers, oldValue, type, value;
+      value = arg1.value, oldValue = arg1.oldValue, arg = arg1.arg, modifiers = arg1.modifiers;
+      type = arg;
       id = type + "/" + oldValue;
       return core.offInterpreter(id);
     }

@@ -33,4 +33,10 @@ module.exports = (core)->
     {value, oldValue, arg, modifiers} = binding
     code = _.keys(modifiers)[0] || 'any'
     type = arg
+    core.offInput "#{code}/#{type}/#{value}"
+
+  offOld: (el, binding, vnode)->
+    {value, oldValue, arg, modifiers} = binding
+    code = _.keys(modifiers)[0] || 'any'
+    type = arg
     core.offInput "#{code}/#{type}/#{oldValue}"

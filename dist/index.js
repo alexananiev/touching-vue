@@ -37,7 +37,7 @@ module.exports = {
           var params;
           params = 1 <= arguments.length ? slice.call(arguments, 0) : [];
           if (isChanged.apply(null, params)) {
-            plugin.off.apply(plugin, params);
+            plugin.offOld.apply(plugin, params);
             return plugin.on.apply(plugin, params);
           }
         },
